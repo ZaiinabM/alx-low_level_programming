@@ -1,19 +1,20 @@
 #include <stdio.h>
 /**
- * main- entry point
- * Return: 0 if successful
+ * main- entry
+ * Return: always 0 (success)
  */
 int main(void)
 {
-	char ch;
+	char x;
+	char y;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		putchar(ch);
+		putchar(x);
 	}
-	for (ch = 'A'; ch => 'Z'; ch++)
+	for (y = 'Z'; y => 'A'; y--)
 	{
-		putchar(ch);
+		putchar(y);
 	}
 	putchar('\n');
 	Return(0);
