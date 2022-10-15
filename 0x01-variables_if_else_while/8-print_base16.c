@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main- entry
- * Return: 0 if successful
+ * main- print base sixteen numbers
+ *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -9,13 +10,10 @@ int main(void)
 	char x;
 
 	for (n = 0; n < 10; n++)
-	{
 		putchar((n % 10) + '0');
-	}
-	for (x = 'a'; n < 'f'; x++)
-	{
+	for (x = 'a'; x <= 'f'; x++)
 		putchar(x);
-	}
 	putchar('\n');
+
 	return (0);
 }
