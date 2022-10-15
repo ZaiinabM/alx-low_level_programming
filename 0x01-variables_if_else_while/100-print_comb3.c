@@ -7,9 +7,9 @@ int main(void)
 {
 	int n1, n2 = '0', n3;
 
-	for (n1 = 0; n1 <= 9; n1++)
+	for (n1 = '0'; n1 <= '9'; n1++)
 	{
-		for (n2 = n3; n2 <= 9; n2++)
+		for (n2 = n3; n2 <= '9'; n2++)
 		{
 			if (n1 != n3)
 			{
@@ -20,7 +20,7 @@ int main(void)
 			{
 				continue;
 			}
-			if (n1 == 8 && n3 == 9)
+			if (n1 == '8' && n3 == '9')
 			{
 				break;
 			}
@@ -34,4 +34,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}
+i}
