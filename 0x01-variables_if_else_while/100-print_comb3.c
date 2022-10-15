@@ -5,22 +5,22 @@
  */
 int main(void)
 {
-	int n1, n2 = '0', n3;
+	int a, b = '0', c;
 
-	for (n1 = '0'; n1 <= '9'; n1++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		for (n2 = n3; n2 <= '9'; n2++)
+		for (b = c; b <= '9'; b++)
 		{
-			if (n1 != n3)
+			if (a != c)
 			{
-				putchar(n1);
-				putchar(n3);
+				putchar(a);
+				putchar(c);
 			}
-			if (n1 == n3)
+			if (a == c)
 			{
 				continue;
 			}
-			if (n1 == '8' && n3 == '9')
+			if (a == '8' && c == '9')
 			{
 				break;
 			}
@@ -30,7 +30,7 @@ int main(void)
 				putchar(' ');
 			}
 		}
-		n2++;
+		b++;
 	}
 	putchar('\n');
 	return (0);
