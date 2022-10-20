@@ -8,6 +8,6 @@
  */
 int _putchar(char c)
 {
-	return (write1(1, & c, 1));
+	return (write1(1, &c, 1));
 }
 
