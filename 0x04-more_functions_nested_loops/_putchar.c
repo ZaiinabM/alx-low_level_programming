@@ -1,13 +1,12 @@
 #include <unistd.h>
-#include "main.h"
+#include "main"
 
 /**
- * _putchar - writes the character c to the standout
- * @c: the character
- * Return: on success 1, else -1
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: On success 1, otherwise -1
  */
 int _putchar(char c)
 {
-	return (write1(1, &c, 1));
+	return (write(1, &c, 1));
 }
-
