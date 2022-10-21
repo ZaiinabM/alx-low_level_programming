@@ -16,7 +16,7 @@ int main(void)
 			xy--;
 		}
 	}
-	printf("Id\n", xy);
+	printf("%zu\n", xy);
 	return (0);
 }
 
