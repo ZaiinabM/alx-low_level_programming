@@ -10,4 +10,5 @@ char *cap_string(char *);
 int _putchar(char c);
 char *rot13(char *);
 char *leet(char *);
+char *rot13(char *);
 #endif
