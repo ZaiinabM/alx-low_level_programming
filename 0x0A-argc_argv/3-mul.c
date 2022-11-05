@@ -13,8 +13,7 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		for (i = 1; i < argc; i++)
-			prduct = prduct *
-				strtol(argv[i], NULL, 10);
+			prduct = prduct * strtol(argv[i], NULL, 10);
 		printf("%d\n", prduct);
 	}
 	else
