@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int is_number(char *str);
+#include "main.h"
+#include <string.h>
+#include <ctype.h>
 /**
  * main - entry point
  * @argc: argument count
@@ -10,46 +11,30 @@ int is_number(char *str);
  */
 int main(int argc, char *argv[])
 {
-	int result = 0, i;
+	int i, j, length, sum;
+	char *ptr;
 
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (is_number(argv[i] == 1)
-					{
-					printf("Error\n");
-					return (1);
-					}
-					else
-					result += strtol(argv[i], NULL, 10);
-			}
-		printf("%d\n", result);
-	}
+	if (argc < 2)
+		printf("0\n");
 	else
 	{
-		printf("0\n");
-		return (0);
-	}
-	exit(EXIT_SUCCESS);
-}
+		sum = 0;
+			for (i = 1; i < argc; i++)
+			{
+				ptr = argv[i];
+				length = strlen(ptr);
 
-/**
- * is_number - checks if char is a number
- * @str: parameter t check
- * Return: 0 if true else 1
- */
-
-int is_number(char *str)
-{
-	int i = 0;
-
-	if (str[0] == '_')
-		i = 1;
-	for (; str[i]; i++)
-	{
-		if ((str + i) < '0' || (str + i) > '9')
-			return (1);
+				for (j = 0; j < length; j++)
+				{
+					if (isdigit(*(ptr + j)) == 0)
+					{
+						printf("Error\n");
+						return (1);
+					}
+				}
+				sum += atoi(argv[i]);
+			}
+			printf("%d\n", sum);
 	}
 	return (0);
 }
