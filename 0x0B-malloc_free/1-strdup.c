@@ -12,23 +12,28 @@ char *_strdup(char *str)
 {
 	char *duplicate;
 
-	unsigned int i, en;
+	int c = 0;
 
-	i = 0;
-	en = 0;
+	unsigned int i, en;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[en])
-		en++;
-
-	duplicate = malloc(sizeof(char) * (en + 1));
+	for (i = 0; str[i]; i++)
+	{
+		c++;
+	}
+	c += 1;
+	duplicate = malloc(c * sizeof(char));
 
 	if (duplicate == NULL)
+	{
 		return (NULL);
-
-	while ((duplicate[i] = str[i]) != '\0')
-			i++;
-			return (duplicate);
+	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		duplicate[i] = str[i];
+	}
+	duplicate[i] = str[i];
+	return (duplicate);
 }
