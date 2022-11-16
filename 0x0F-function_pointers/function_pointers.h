@@ -1,4 +1,4 @@
-#ifndef _FUNC_POINTERS_H 
+#ifndef _FUNC_POINTERS_H
 #define _FUNC_POINTERS_H
 
 #include <stddef.h>
