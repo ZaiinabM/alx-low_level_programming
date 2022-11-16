@@ -59,7 +59,6 @@ char **strtow(char *str)
 			*tmp = '\0';
 			matrix[k] = tmp - c;
 			k++;
-			c = 0;
 		}
 	}
 	else if (c++ == 0)
